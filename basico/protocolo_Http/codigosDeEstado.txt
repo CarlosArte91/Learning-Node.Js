@@ -1,0 +1,8 @@
+Códigos de estado HTTP
+
+--> Respuestas informativas ............ 100 - 199
+--> Respuestas satisfactorias .......... 200 - 299
+--> Redireccionamientos ................ 300 - 399
+--> Errores de los clientes ............ 400 - 499
+--> Errores de los servidores .......... 500 - 599
+
