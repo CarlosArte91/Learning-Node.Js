@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "categoria": "programacion",
+        "titulo": "Aprende Python",
+        "tema": "python",
+        "vistas": 145211,
+        "nivel": "basico"
+    },
+    {
+        "id": 2,
+        "categoria": "programacion",
+        "titulo": "Python Intermedio",
+        "tema": "python",
+        "vistas": 1478555,
+        "nivel": "intermedio"
+    },
+    {
+        "id": 3,
+        "categoria": "programacion",
+        "titulo": "Curso de JavaScript",
+        "tema": "javascript",
+        "vistas": 17844458,
+        "nivel": "basico"
+    },
+    {
+        "id": 4,
+        "categoria": "matematicas",
+        "titulo": "Aprende Calculo",
+        "tema": "calculo",
+        "vistas": 1784445,
+        "nivel": "basico"
+    },
+    {
+        "id": 5,
+        "categoria": "matematicas",
+        "titulo": "Aprende Algebra",
+        "tema": "algebra",
+        "vistas": 8566,
+        "nivel": "intermedio"
+    }
+]
