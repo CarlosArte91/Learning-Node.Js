@@ -1,5 +1,6 @@
 const http = require("http");
 const { handleRequestGET } = require("./functions/methodGet.js");
+const { handleRequestPOST } = require("./functions/methodPost.js");
 
 
 const server = http.createServer((req, res) => {
@@ -8,8 +9,8 @@ const server = http.createServer((req, res) => {
     switch(method) {
         case "GET":
             return handleRequestGET(req, res);
-        // case "POST":
-        //     return handleRequestPOST(req, res);
+        case "POST":
+            return handleRequestPOST(req, res);
         default:
             console.log(`El metodo ${method} no se puede manejar por el servidor`);
     };

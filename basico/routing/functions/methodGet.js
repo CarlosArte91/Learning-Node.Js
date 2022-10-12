@@ -2,6 +2,8 @@ const cursos = require("../cursos.json");
 
 const handleRequestGET = (req, res) => {
     const path = req.url;
+    const url = new URL(`http://localhost:3000${path}`);
+    const categoria = url.searchParams.get("categoria");
  
     switch(path) {
         case "/":
@@ -12,9 +14,9 @@ const handleRequestGET = (req, res) => {
             res.statusCode = 200;
             res.end(JSON.stringify(cursos));
             break;
-        case "/cursos/programacion":
+        case `/cursos?categoria=${categoria}`:
             res.statusCode = 200;
-            res.end(JSON.stringify(cursosCategoria("programacion")));
+            res.end(JSON.stringify(cursosCategoria(categoria)));
             break;
         default:
             res.statusCode = 404;
