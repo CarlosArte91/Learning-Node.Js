@@ -5,6 +5,7 @@ const general = require("./routers/general").router;
 
 const app = express();
 
+app.use(express.json());
 app.use("/", general);
 app.use("/cursos/programacion", routerProgramacion);
 app.use("/cursos/matematicas", routerMatematicas);
